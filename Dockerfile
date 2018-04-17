@@ -1,6 +1,6 @@
 FROM ruby:2.5
 
-RUN apt-get update && apt-get install -y mysql-client --no-install-recommends && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y nodejs mysql-client --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /var/lib/mysql && touch /var/lib/mysql/mysql.sock
 ADD ./containers/mysql/my.cnf /etc/
