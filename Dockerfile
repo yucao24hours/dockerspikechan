@@ -1,4 +1,4 @@
-FROM ruby:2.3.1
+FROM ruby:2.5
 
 RUN apt-get update && apt-get install -y mysql-client --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
